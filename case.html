@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial Aviation Hub | Airlines &amp; Airports</title>
+<meta name="description" content="Explore the world's top commercial airlines by country, famous international airports, aviation videos, and contact us.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><i class="fa-solid fa-plane-up"></i>Aviation<span>Hub</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="cases.html">Aircraft</a>
+      <a href="cases.html#gallery">Gallery</a>
+      <a href="case.html" class="active">Airlines &amp; Airports</a>
+      <a href="case.html#videos">Videos</a>
+      <a href="case.html#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="nav-search">
+        <input type="text" id="navSearchInput" placeholder="Search aircraft...">
+        <button id="searchToggle" aria-label="Toggle search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <div data-aos="fade-up">
+      <h1>Airlines &amp; Airports</h1>
+      <p>Discover the world's leading airlines by country, the top-ranked carriers, and the airports connecting the globe.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / Airlines &amp; Airports</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT COMMERCIAL AVIATION ============ -->
+<section class="section" id="about-aviation">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Industry Overview</span>
+      <h2>About Commercial Aviation</h2>
+      <p>Commercial aviation is the sector of air transport concerned with operating aircraft for hire to carry passengers and cargo. Since the first scheduled passenger flight took off in 1914, the industry has grown into a vast global network of airlines, airports, and manufacturers that moves billions of people every year. Regulated by international bodies such as ICAO and IATA, commercial aviation blends cutting-edge engineering with complex logistics — coordinating air traffic control, ground operations, and maintenance across thousands of routes to keep the world connected safely and efficiently.</p>
+    </div>
+
+    <div class="highlights-grid">
+      <div class="highlight-card" data-aos="fade-up">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <h4>Rich History</h4>
+        <p>From early biplanes to the jet age, commercial aviation has continuously reinvented how the world travels.</p>
+      </div>
+      <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-scale-balanced"></i>
+        <h4>Global Regulation</h4>
+        <p>ICAO and IATA set the safety, security, and operational standards that airlines follow worldwide.</p>
+      </div>
+      <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-network-wired"></i>
+        <h4>Route Networks</h4>
+        <p>Hub-and-spoke systems built around major airports allow efficient connections between thousands of cities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AIRLINES BY COUNTRY ============ -->
+<section class="section section-alt" id="airlines">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Global Carriers</span>
+      <h2>Airlines by Country</h2>
+      <p>Search and filter leading commercial airlines from around the world.</p>
+    </div>
+
+    <div class="filter-bar" data-aos="fade-up">
+      <div class="search-box">
+        <input type="text" id="airlineSearch" placeholder="Search airlines by name...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="filter-chips">
+        <button class="chip active" data-country="all">All</button>
+        <button class="chip" data-country="usa">USA</button>
+        <button class="chip" data-country="uae">UAE</button>
+        <button class="chip" data-country="uk">UK</button>
+        <button class="chip" data-country="qatar">Qatar</button>
+        <button class="chip" data-country="singapore">Singapore</button>
+        <button class="chip" data-country="germany">Germany</button>
+        <button class="chip" data-country="pakistan">Pakistan</button>
+      </div>
+    </div>
+    <p class="no-results" id="noAirlineResults"><i class="fa-solid fa-building-circle-xmark" style="font-size:1.6rem;display:block;margin-bottom:10px;"></i>No airlines match your search.</p>
+
+    <div class="grid-4" data-aos="fade-up">
+      <div class="airline-item" data-name="Emirates" data-country-value="uae">
+        <img src="emirates logo.png" alt="Emirates logo">
+        <div><h4>Emirates</h4><span>Dubai, UAE</span></div>
+      </div>
+      <div class="airline-item" data-name="Qatar Airways" data-country-value="qatar">
+        <img src="qatar logo.png" alt="Qatar Airways logo">
+        <div><h4>Qatar Airways</h4><span>Doha, Qatar</span></div>
+      </div>
+      <div class="airline-item" data-name="Delta Air Lines" data-country-value="usa">
+        <img src="delta logo.png" alt="Delta Air Lines logo">
+        <div><h4>Delta Air Lines</h4><span>Atlanta, USA</span></div>
+      </div>
+      <div class="airline-item" data-name="American Airlines" data-country-value="usa">
+        <img src="american logo.jpg" alt="American Airlines logo">
+        <div><h4>American Airlines</h4><span>Fort Worth, USA</span></div>
+      </div>
+      <div class="airline-item" data-name="British Airways" data-country-value="uk">
+        <img src="british logo.png" alt="British Airways logo">
+        <div><h4>British Airways</h4><span>London, UK</span></div>
+      </div>
+      <div class="airline-item" data-name="Singapore Airlines" data-country-value="singapore">
+        <img src="sinagopore logo.png" alt="Singapore Airlines logo">
+        <div><h4>Singapore Airlines</h4><span>Singapore</span></div>
+      </div>
+      <div class="airline-item" data-name="Lufthansa" data-country-value="germany">
+        <img src="lufthansa logo.png" alt="Lufthansa logo">
+        <div><h4>Lufthansa</h4><span>Frankfurt, Germany</span></div>
+      </div>
+      <div class="airline-item" data-name="Pakistan International Airlines" data-country-value="pakistan">
+        <img src="PIA logo.jpg" alt="Pakistan International Airlines logo">
+        <div><h4>PIA</h4><span>Karachi, Pakistan</span></div>
+      </div>
+      <div class="airline-item" data-name="United Airlines" data-country-value="usa">
+        <img src="united logo.png" alt="United Airlines logo">
+        <div><h4>United Airlines</h4><span>Chicago, USA</span></div>
+      </div>
+      <div class="airline-item" data-name="Etihad Airways" data-country-value="uae">
+        <img src="ethihad logo.png" alt="Etihad Airways logo">
+        <div><h4>Etihad Airways</h4><span>Abu Dhabi, UAE</span></div>
+      </div>
+      <div class="airline-item" data-name="Virgin Atlantic" data-country-value="uk">
+        <img src="virgin logo.png" alt="Virgin Atlantic logo">
+        <div><h4>Virgin Atlantic</h4><span>London, UK</span></div>
+      </div>
+      <div class="airline-item" data-name="Airblue" data-country-value="pakistan">
+        <img src="airblue logo.png" alt="Airblue logo">
+        <div><h4>Airblue</h4><span>Karachi, Pakistan</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOP AIRLINES ============ -->
+<section class="section" id="top-airlines">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">World Rankings</span>
+      <h2>World's Top Commercial Airlines</h2>
+      <p>Ranked by fleet size, global reach, and passenger satisfaction.</p>
+    </div>
+
+    <div class="rank-list" data-aos="fade-up">
+      <div class="rank-item">
+        <div class="rank-num">1</div>
+        <div class="rank-info"><h4>Qatar Airways</h4><span>Doha, Qatar &bull; Star Alliance affiliate network</span></div>
+        <div class="rank-score"><strong>9.4</strong><small>Rating</small></div>
+      </div>
+      <div class="rank-item">
+        <div class="rank-num">2</div>
+        <div class="rank-info"><h4>Singapore Airlines</h4><span>Singapore &bull; Star Alliance</span></div>
+        <div class="rank-score"><strong>9.3</strong><small>Rating</small></div>
+      </div>
+      <div class="rank-item">
+        <div class="rank-num">3</div>
+        <div class="rank-info"><h4>Emirates</h4><span>Dubai, UAE &bull; Largest A380 operator</span></div>
+        <div class="rank-score"><strong>9.1</strong><small>Rating</small></div>
+      </div>
+      <div class="rank-item">
+        <div class="rank-num">4</div>
+        <div class="rank-info"><h4>ANA — All Nippon Airways</h4><span>Tokyo, Japan &bull; Star Alliance</span></div>
+        <div class="rank-score"><strong>8.9</strong><small>Rating</small></div>
+      </div>
+      <div class="rank-item">
+        <div class="rank-num">5</div>
+        <div class="rank-info"><h4>Cathay Pacific</h4><span>Hong Kong &bull; Oneworld Alliance</span></div>
+        <div class="rank-score"><strong>8.8</strong><small>Rating</small></div>
+      </div>
+      <div class="rank-item">
+        <div class="rank-num">6</div>
+        <div class="rank-info"><h4>Turkish Airlines</h4><span>Istanbul, Turkey &bull; Widest global route network</span></div>
+        <div class="rank-score"><strong>8.6</strong><small>Rating</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AIRPORTS ============ -->
+<section class="section section-alt" id="airports">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Global Hubs</span>
+      <h2>Famous International Airports</h2>
+      <p>The world's busiest and most iconic gateways for commercial air travel.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card airport-card" data-aos="fade-up"
+        <div class="card-img"><img src="singapore airport.webp" alt="Singapore Changi Airport"></div>
+        <div class="card-body">
+          <h3><i class="fa-solid fa-tower-observation" style="color:var(--sky);"></i> Singapore Changi</h3>
+          <p>Renowned for its Jewel complex and consistently rated the world's best airport for service and design.</p>
+          <div class="card-meta"><span><i class="fa-solid fa-plane-arrival"></i>3 Terminals</span><span><i class="fa-solid fa-users"></i>68M+ /yr</span></div>
+        </div>
+      </div>
+      <div class="card airport-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-img"><img src="dubai airport.webp" alt="Dubai International Airport"></div>
+        <div class="card-body">
+          <h3><i class="fa-solid fa-tower-observation" style="color:var(--sky);"></i> Dubai International</h3>
+          <p>One of the busiest airports for international passenger traffic, and the home hub of Emirates.</p>
+          <div class="card-meta"><span><i class="fa-solid fa-plane-arrival"></i>2 Terminals</span><span><i class="fa-solid fa-users"></i>86M+ /yr</span></div>
+        </div>
+      </div>
+      <div class="card airport-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-img"><img src="heathrow airporty.jpg" alt="London Heathrow Airport"></div>
+        <div class="card-body">
+          <h3><i class="fa-solid fa-tower-observation" style="color:var(--sky);"></i> London Heathrow</h3>
+          <p>The busiest airport in Europe and a major transatlantic gateway for global business travel.</p>
+          <div class="card-meta"><span><i class="fa-solid fa-plane-arrival"></i>4 Terminals</span><span><i class="fa-solid fa-users"></i>79M+ /yr</span></div>
+        </div>
+      </div>
+      <div class="card airport-card" data-aos="fade-up">
+        <div class="card-img"><img src="jfk airport.jpg" alt="New York JFK Airport"></div>
+        <div class="card-body">
+          <h3><i class="fa-solid fa-tower-observation" style="color:var(--sky);"></i> New York JFK</h3>
+          <p>A vital hub connecting North America with the rest of the world, serving dozens of international carriers.</p>
+          <div class="card-meta"><span><i class="fa-solid fa-plane-arrival"></i>6 Terminals</span><span><i class="fa-solid fa-users"></i>62M+ /yr</span></div>
+        </div>
+      </div>
+      <div class="card airport-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-img"><img src="tokyo airport.jpg" alt="Tokyo Haneda Airport"></div>
+        <div class="card-body">
+          <h3><i class="fa-solid fa-tower-observation" style="color:var(--sky);"></i> Tokyo Haneda</h3>
+          <p>Celebrated for its efficiency, cleanliness, and convenient proximity to central Tokyo.</p>
+          <div class="card-meta"><span><i class="fa-solid fa-plane-arrival"></i>3 Terminals</span><span><i class="fa-solid fa-users"></i>87M+ /yr</span></div>
+        </div>
+      </div>
+      <div class="card airport-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-img"><img src="istanbol airport.jpg" alt="Istanbul Airport"></div>
+        <div class="card-body">
+          <h3><i class="fa-solid fa-tower-observation" style="color:var(--sky);"></i> Istanbul Airport</h3>
+          <p>One of the newest mega-hubs, built to become the world's largest airport by passenger capacity.</p>
+          <div class="card-meta"><span><i class="fa-solid fa-plane-arrival"></i>1 Terminal</span><span><i class="fa-solid fa-users"></i>76M+ /yr</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO SECTION ============ -->
+<section class="section" id="videos">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Watch &amp; Learn</span>
+      <h2>Aviation Videos</h2>
+      <p>Dive deeper with curated aviation documentaries and walkthroughs.</p>
+    </div>
+
+    <div class="video-grid" data-aos="fade-up">
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="jet engine .mp4" title="How Jet Engines Work" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h4>How Jet Engines Work</h4>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="dreamline tour.mp4" title="Boeing 787 Dreamliner Tour" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h4>Boeing 787 Dreamliner Tour</h4>
+      </div>
+      <div class="video-card">
+        <div class="video-frame">
+          <iframe src="a380 explained.mp4" title="Airbus A380 Explained" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h4>Airbus A380 Explained</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Contact Us</h2>
+      <p>Have a question about an aircraft, airline, or airport? Send us a message.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="contact-info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><h4>Our Office</h4><p>Aviation Plaza, Sky Tower, Islamabad, Pakistan</p></div>
+        </div>
+        <div class="contact-info-item">
+          <i class="fa-solid fa-phone"></i>
+          <div><h4>Call Us</h4><p>+92 3199729864</p></div>
+        </div>
+        <div class="contact-info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div><h4>Email</h4><p>faizanwajih397@gmail.com</p></div>
+        </div>
+        <div class="contact-info-item">
+          <i class="fa-solid fa-clock"></i>
+          <div><h4>Working Hours</h4><p>Mon – Fri: 9:00 AM – 6:00 PM</p></div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-aos="fade-left" novalidate>
+        <div class="form-success" id="contactSuccess"><i class="fa-solid fa-circle-check"></i> Your message has been sent successfully. We'll get back to you soon!</div>
+        <div class="form-group">
+          <label for="contactName">Full Name</label>
+          <input type="text" id="contactName" name="name" placeholder="John Doe">
+          <span class="error-msg">Please enter your full name.</span>
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email Address</label>
+          <input type="email" id="contactEmail" name="email" placeholder="john@example.com">
+          <span class="error-msg">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="contactSubject">Subject</label>
+          <input type="text" id="contactSubject" name="subject" placeholder="Question about the A350">
+          <span class="error-msg">Subject must be at least 3 characters.</span>
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" placeholder="Type your message here..."></textarea>
+          <span class="error-msg">Message must be at least 10 characters.</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEEDBACK ============ -->
+<section class="section" id="feedback">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Community Voice</span>
+      <h2>Traveler Feedback</h2>
+      <p>What aviation enthusiasts and travelers are saying about their experiences.</p>
+    </div>
+
+    <div class="feedback-grid">
+      <div class="feedback-card" data-aos="fade-up">
+        <div class="feedback-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"Flying on the A350 was incredibly smooth and quiet — the cabin pressure and humidity made a noticeable difference on a 12-hour flight."</p>
+        <div class="feedback-user">
+          <img src="ahmed raza.jpg" alt="Traveler photo">
+          <div><h5>Ahmed Raza</h5><span>Frequent Flyer</span></div>
+        </div>
+      </div>
+      <div class="feedback-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="feedback-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p>"Changi Airport made a 6-hour layover genuinely enjoyable. The Jewel waterfall alone was worth the wait."</p>
+        <div class="feedback-user">
+          <img src="sara malik.jpg" alt="Traveler photo">
+          <div><h5>Sara Malik</h5><span>Aviation Enthusiast</span></div>
+        </div>
+      </div>
+      <div class="feedback-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="feedback-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"This site's aircraft comparison table helped me finally understand the real differences between the 787 and A350."</p>
+        <div class="feedback-user">
+          <img src="bilal ahmed.jpg" alt="Traveler photo">
+          <div><h5>Bilal Ahmed</h5><span>DPT Student &amp; Plane Spotter</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback-form-wrap" data-aos="fade-up">
+      <h3 style="margin-bottom:20px;">Share Your Feedback</h3>
+      <form id="feedbackForm" novalidate>
+        <div class="form-success" id="feedbackSuccess"><i class="fa-solid fa-circle-check"></i> Thank you for your feedback!</div>
+        <div class="form-group">
+          <label>Your Rating</label>
+          <div class="rating-select" id="ratingSelect">
+            <i class="fa-solid fa-star" data-value="1"></i>
+            <i class="fa-solid fa-star" data-value="2"></i>
+            <i class="fa-solid fa-star" data-value="3"></i>
+            <i class="fa-solid fa-star" data-value="4"></i>
+            <i class="fa-solid fa-star" data-value="5"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="feedbackName">Your Name</label>
+          <input type="text" id="feedbackName" placeholder="Your name">
+          <span class="error-msg">Please enter your name.</span>
+        </div>
+        <div class="form-group">
+          <label for="feedbackComment">Your Feedback</label>
+          <textarea id="feedbackComment" placeholder="Tell us about your experience..."></textarea>
+          <span class="error-msg">Please share a bit more feedback.</span>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fa-solid fa-plane-up"></i>Aviation<span>Hub</span></a>
+        <p>Your premium destination for commercial aviation knowledge — aircraft, airlines, airports and industry insight, all in one place.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cases.html">Aircraft</a></li>
+          <li><a href="case.html">Airlines</a></li>
+          <li><a href="case.html#airports">Airports</a></li>
+          <li><a href="cases.html#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="cases.html#compare">Compare Aircraft</a></li>
+          <li><a href="case.html#top-airlines">Top Airlines</a></li>
+          <li><a href="case.html#videos">Videos</a></li>
+          <li><a href="case.html#feedback">Feedback</a></li>
+          <li><a href="case.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Stay In The Loop</h5>
+        <p style="font-size:0.88rem;margin-bottom:16px;">Subscribe for the latest commercial aviation news and updates.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <a href="index.html">Aviation Hub</a>. All rights reserved. Built for aviation enthusiasts worldwide.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

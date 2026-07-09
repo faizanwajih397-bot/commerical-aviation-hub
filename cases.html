@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial Aviation Hub | Aircraft</title>
+<meta name="description" content="Explore Boeing and Airbus commercial aircraft specifications, gallery, and comparison tables.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><i class="fa-solid fa-plane-up"></i>Aviation<span>Hub</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="cases.html" class="active">Aircraft</a>
+      <a href="cases.html#gallery">Gallery</a>
+      <a href="case.html">Airlines &amp; Airports</a>
+      <a href="case.html#videos">Videos</a>
+      <a href="case.html#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="nav-search">
+        <input type="text" id="navSearchInput" placeholder="Search aircraft...">
+        <button id="searchToggle" aria-label="Toggle search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <div data-aos="fade-up">
+      <h1>Commercial Aircraft</h1>
+      <p>An in-depth look at the Boeing and Airbus aircraft powering the world's airlines — specifications, capacities, and range.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> / Aircraft</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT COMMERCIAL AIRCRAFT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Overview</span>
+      <h2>About Commercial Aircraft</h2>
+      <p>Commercial aircraft are engineered to carry passengers and cargo safely, efficiently, and reliably across every distance — from short regional hops to nonstop flights spanning entire hemispheres. Two manufacturers, Boeing and Airbus, dominate this market, each offering a family of narrow-body and wide-body jets tailored to different route networks. Advances in aerodynamics, composite materials, and engine technology have made modern aircraft dramatically quieter and more fuel-efficient than the generation before them, while digital fly-by-wire flight controls and advanced avionics continue to raise the bar for safety and precision.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEARCH & FILTER ============ -->
+<section class="section section-alt" style="padding-top:20px;">
+  <div class="container">
+    <div class="filter-bar" data-aos="fade-up">
+      <div class="search-box">
+        <input type="text" id="aircraftSearch" placeholder="Search aircraft by name (e.g. 787, A380, 737)...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="filter-chips">
+        <button class="chip active" data-manufacturer="all">All</button>
+        <button class="chip" data-manufacturer="boeing">Boeing</button>
+        <button class="chip" data-manufacturer="airbus">Airbus</button>
+      </div>
+    </div>
+    <p class="no-results" id="noAircraftResults"><i class="fa-solid fa-plane-slash" style="font-size:1.6rem;display:block;margin-bottom:10px;"></i>No aircraft match your search.</p>
+
+    <!-- ============ BOEING LINEUP ============ -->
+    <div id="boeing">
+      <div class="section-head" data-aos="fade-up" style="margin-bottom:20px;">
+        <span class="eyebrow">Manufacturer Spotlight</span>
+        <h2>Boeing Aircraft</h2>
+      </div>
+
+      <div class="aircraft-card aircraft-detail" data-name="Boeing 737" data-manufacturer="boeing" data-aos="fade-up">
+        <div class="aircraft-media"><img src="737 on runway.jpg" alt="Boeing 737"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">BOEING</span>
+          <h3>Boeing 737 Family</h3>
+          <p>The best-selling commercial jetliner ever built, the 737 family serves short and medium-haul routes for airlines across the globe, from the 737 MAX 7 to the larger MAX 10.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>138–204 passengers</li>
+            <li><strong>Range</strong>3,300–3,550 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.79</li>
+            <li><strong>First Flight</strong>1967</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail reverse" data-name="Boeing 747" data-manufacturer="boeing" data-aos="fade-up">
+        <div class="aircraft-media"><img src="747.jpg" alt="Boeing 747"></div>
+
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">BOEING</span>
+          <h3>Boeing 747 "Queen of the Skies"</h3>
+          <p>The iconic humpbacked jumbo jet that pioneered wide-body air travel and long remained the world's largest passenger aircraft.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>366–524 passengers</li>
+            <li><strong>Range</strong>7,730 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.855</li>
+            <li><strong>First Flight</strong>1969</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail" data-name="Boeing 757" data-manufacturer="boeing" data-aos="fade-up">
+        <div class="aircraft-media"><img src="757.jpg" alt="Boeing 757"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">BOEING</span>
+          <h3>Boeing 757</h3>
+          <p>A powerful narrow-body jet known for its steep-climb performance and long range, still favored on demanding routes and by cargo operators.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>200–239 passengers</li>
+            <li><strong>Range</strong>3,900 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.80</li>
+            <li><strong>First Flight</strong>1982</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail reverse" data-name="Boeing 767" data-manufacturer="boeing" data-aos="fade-up">
+        <div class="aircraft-media"><img src="767.jpg" alt="Boeing 767"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">BOEING</span>
+          <h3>Boeing 767</h3>
+          <p>A versatile mid-size widebody serving transatlantic routes and cargo operations, praised for reliability and operating economics.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>216–245 passengers</li>
+            <li><strong>Range</strong>6,050 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.80</li>
+            <li><strong>First Flight</strong>1981</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail" data-name="Boeing 777" data-manufacturer="boeing" data-aos="fade-up">
+        <div class="aircraft-media"><img src="777.jpg" alt="Boeing 777"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">BOEING</span>
+          <h3>Boeing 777</h3>
+          <p>The world's largest twinjet, trusted by airlines for ultra long-haul flying with exceptional fuel efficiency for its size.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>317–396 passengers</li>
+            <li><strong>Range</strong>8,555 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.84</li>
+            <li><strong>First Flight</strong>1994</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail reverse" data-name="Boeing 787 Dreamliner" data-manufacturer="boeing" data-aos="fade-up">
+        <div class="aircraft-media"><img src="787.jpg" alt="Boeing 787 Dreamliner"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">BOEING</span>
+          <h3>Boeing 787 Dreamliner</h3>
+          <p>A carbon-composite widebody built for maximum fuel efficiency, enabling airlines to open new nonstop long-haul routes profitably.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>242–330 passengers</li>
+            <li><strong>Range</strong>7,355 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.85</li>
+            <li><strong>First Flight</strong>2009</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ AIRBUS LINEUP ============ -->
+    <div id="airbus" style="margin-top:40px;">
+      <div class="section-head" data-aos="fade-up" style="margin-bottom:20px;">
+        <span class="eyebrow">Manufacturer Spotlight</span>
+        <h2>Airbus Aircraft</h2>
+      </div>
+
+      <div class="aircraft-card aircraft-detail" data-name="Airbus A220" data-manufacturer="airbus" data-aos="fade-up">
+        <div class="aircraft-media"><img src="a220.jpg" alt="Airbus A220"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">AIRBUS</span>
+          <h3>Airbus A220</h3>
+          <p>Originally the Bombardier CSeries, the A220 is a highly efficient small narrow-body designed for regional and thin long-haul routes.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>108–160 passengers</li>
+            <li><strong>Range</strong>3,350 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.78</li>
+            <li><strong>First Flight</strong>2013</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail reverse" data-name="Airbus A320 Family" data-manufacturer="airbus" data-aos="fade-up">
+        <div class="aircraft-media"><img src="a320.jpg" alt="Airbus A320 Family"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">AIRBUS</span>
+          <h3>Airbus A320 Family</h3>
+          <p>Airbus's best-selling narrow-body line — including the A319, A320, and A321neo — competes directly with the Boeing 737 on short and medium-haul routes.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>140–244 passengers</li>
+            <li><strong>Range</strong>3,300–4,000 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.78</li>
+            <li><strong>First Flight</strong>1987</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail" data-name="Airbus A330" data-manufacturer="airbus" data-aos="fade-up">
+        <div class="aircraft-media"><img src="a330.jpg" alt="Airbus A330"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">AIRBUS</span>
+          <h3>Airbus A330</h3>
+          <p>A dependable wide-body twinjet offering strong economics on medium to long-haul routes, popular for both passenger and freighter use.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>247–300 passengers</li>
+            <li><strong>Range</strong>7,250 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.82</li>
+            <li><strong>First Flight</strong>1992</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail reverse" data-name="Airbus A340" data-manufacturer="airbus" data-aos="fade-up">
+        <div class="aircraft-media"><img src="a340.jpg" alt="Airbus A340"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">AIRBUS</span>
+          <h3>Airbus A340</h3>
+          <p>A four-engine long-range widebody built for routes far from diversion airports, later succeeded by more efficient twinjets.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>261–380 passengers</li>
+            <li><strong>Range</strong>7,900 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.82</li>
+            <li><strong>First Flight</strong>1991</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail" data-name="Airbus A350" data-manufacturer="airbus" data-aos="fade-up">
+        <div class="aircraft-media"><img src="a350.jpg" alt="Airbus A350"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">AIRBUS</span>
+          <h3>Airbus A350 XWB</h3>
+          <p>An extra-wide-body composite jet built to rival the 787 and 777, delivering excellent range with class-leading passenger comfort.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>300–410 passengers</li>
+            <li><strong>Range</strong>8,700 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.85</li>
+            <li><strong>First Flight</strong>2013</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aircraft-card aircraft-detail reverse" data-name="Airbus A380" data-manufacturer="airbus" data-aos="fade-up">
+        <div class="aircraft-media"><img src="a380.jpg" alt="Airbus A380"></div>
+        <div class="aircraft-info">
+          <span class="manufacturer-badge">AIRBUS</span>
+          <h3>Airbus A380</h3>
+          <p>The world's largest passenger airliner, a full double-deck superjumbo built for the busiest high-capacity long-haul routes.</p>
+          <ul class="spec-list">
+            <li><strong>Capacity</strong>525–853 passengers</li>
+            <li><strong>Range</strong>8,000 nmi</li>
+            <li><strong>Cruise Speed</strong>Mach 0.85</li>
+            <li><strong>First Flight</strong>2005</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AIRCRAFT GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Visual Showcase</span>
+      <h2>Aircraft Gallery</h2>
+      <p>Click any photo to view it full-screen. Use the arrows or keyboard to navigate.</p>
+    </div>
+
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="gallery-item"><img src="737 on runway.jpg" alt="Boeing 737 on runway"><div class="gallery-overlay">Boeing 737</div></div>
+      <div class="gallery-item"><img src="wide shot.jpg" alt="Airbus A380 wide shot"><div class="gallery-overlay">Airbus A380</div></div>
+      <div class="gallery-item"><img src="787 on flight.jpg" alt="Boeing 787 Dreamliner in flight"><div class="gallery-overlay">Boeing 787 Dreamliner</div></div>
+      <div class="gallery-item"><img src="a350 landing.jpg" alt="Airbus A350 landing"><div class="gallery-overlay">Airbus A350</div></div>
+      <div class="gallery-item"><img src="777 takeoff.jpg" alt="Boeing 777 takeoff"><div class="gallery-overlay">Boeing 777</div></div>
+      <div class="gallery-item"><img src="a320 close up.jpg" alt="Airbus A320 close up"><div class="gallery-overlay">Airbus A320</div></div>
+      <div class="gallery-item"><img src="747 nose.jpg" alt="Boeing 747 nose"><div class="gallery-overlay">Boeing 747</div></div>
+      <div class="gallery-item"><img src="a330 on tarmac.jpg" alt="Airbus A330 on tarmac"><div class="gallery-overlay">Airbus A330</div></div>
+      <div class="gallery-item"><img src="767 cargo.jpg" alt="Boeing 767 cargo variant"><div class="gallery-overlay">Boeing 767</div></div>
+      <div class="gallery-item"><img src="a220 taxing.jpg" alt="Airbus A220 taxiing"><div class="gallery-overlay">Airbus A220</div></div>
+      <div class="gallery-item"><img src="757 climb out.jpg" alt="Boeing 757 climb out"><div class="gallery-overlay">Boeing 757</div></div>
+      <div class="gallery-item"><img src="a340 4 engines.jpg" alt="Airbus A340 four engines"><div class="gallery-overlay">Airbus A340</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARISON TABLE ============ -->
+<section class="section section-alt" id="compare">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Side By Side</span>
+      <h2>Aircraft Comparison</h2>
+      <p>Compare capacity, range, and cruise speed across leading Boeing and Airbus models.</p>
+    </div>
+
+    <div class="table-wrap" data-aos="fade-up">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Aircraft</th>
+            <th>Manufacturer</th>
+            <th>Capacity</th>
+            <th>Range (nmi)</th>
+            <th>Cruise Speed</th>
+            <th>First Flight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>737 Family</td><td>Boeing</td><td>138–204</td><td>3,550</td><td>Mach 0.79</td><td>1967</td></tr>
+          <tr><td>747</td><td>Boeing</td><td>366–524</td><td>7,730</td><td>Mach 0.855</td><td>1969</td></tr>
+          <tr><td>757</td><td>Boeing</td><td>200–239</td><td>3,900</td><td>Mach 0.80</td><td>1982</td></tr>
+          <tr><td>767</td><td>Boeing</td><td>216–245</td><td>6,050</td><td>Mach 0.80</td><td>1981</td></tr>
+          <tr><td>777</td><td>Boeing</td><td>317–396</td><td>8,555</td><td>Mach 0.84</td><td>1994</td></tr>
+          <tr><td>787 Dreamliner</td><td>Boeing</td><td>242–330</td><td>7,355</td><td>Mach 0.85</td><td>2009</td></tr>
+          <tr><td>A220</td><td>Airbus</td><td>108–160</td><td>3,350</td><td>Mach 0.78</td><td>2013</td></tr>
+          <tr><td>A320 Family</td><td>Airbus</td><td>140–244</td><td>4,000</td><td>Mach 0.78</td><td>1987</td></tr>
+          <tr><td>A330</td><td>Airbus</td><td>247–300</td><td>7,250</td><td>Mach 0.82</td><td>1992</td></tr>
+          <tr><td>A340</td><td>Airbus</td><td>261–380</td><td>7,900</td><td>Mach 0.82</td><td>1991</td></tr>
+          <tr><td>A350 XWB</td><td>Airbus</td><td>300–410</td><td>8,700</td><td>Mach 0.85</td><td>2013</td></tr>
+          <tr><td>A380</td><td>Airbus</td><td>525–853</td><td>8,000</td><td>Mach 0.85</td><td>2005</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></span>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+  <img src="" alt="" id="lightboxImg">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fa-solid fa-plane-up"></i>Aviation<span>Hub</span></a>
+        <p>Your premium destination for commercial aviation knowledge — aircraft, airlines, airports and industry insight, all in one place.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cases.html">Aircraft</a></li>
+          <li><a href="case.html">Airlines</a></li>
+          <li><a href="case.html#airports">Airports</a></li>
+          <li><a href="cases.html#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="cases.html#compare">Compare Aircraft</a></li>
+          <li><a href="case.html#top-airlines">Top Airlines</a></li>
+          <li><a href="case.html#videos">Videos</a></li>
+          <li><a href="case.html#feedback">Feedback</a></li>
+          <li><a href="case.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Stay In The Loop</h5>
+        <p style="font-size:0.88rem;margin-bottom:16px;">Subscribe for the latest commercial aviation news and updates.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <a href="index.html">Aviation Hub</a>. All rights reserved. Built for aviation enthusiasts worldwide.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial Aviation Hub | Home</title>
+<meta name="description" content="Your premium guide to commercial aviation — aircraft, airlines, airports and industry news.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><i class="fa-solid fa-plane-up"></i>Aviation<span>Hub</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="cases.html">Aircraft</a>
+      <a href="cases.html#gallery">Gallery</a>
+      <a href="case.html">Airlines &amp; Airports</a>
+      <a href="case.html#videos">Videos</a>
+      <a href="case.html#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="nav-search">
+        <input type="text" id="navSearchInput" placeholder="Search aircraft...">
+        <button id="searchToggle" aria-label="Toggle search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <i class="fa-solid fa-plane plane-icon plane-1"></i>
+  <i class="fa-solid fa-plane-departure plane-icon plane-2"></i>
+  <div class="container">
+    <div class="hero-content" data-aos="fade-up">
+      <span class="eyebrow">Welcome to Commercial Aviation Hub</span>
+      <h1>Explore the World of <span>Commercial Aviation</span></h1>
+      <p>Discover the aircraft, airlines, and airports that connect our world — from the Boeing 787 Dreamliner to the Airbus A380, explore specifications, rankings, and the latest industry news in one premium hub.</p>
+      <div class="hero-btns">
+        <a href="cases.html" class="btn btn-primary"><i class="fa-solid fa-jet-fighter-up"></i> Explore Aircraft</a>
+        <a href="case.html" class="btn btn-outline"><i class="fa-solid fa-earth-americas"></i> Airlines &amp; Airports</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK NAV ============ -->
+<div class="container">
+  <div class="quick-nav" data-aos="fade-up">
+    <a href="cases.html" class="quick-card">
+      <i class="fa-solid fa-plane"></i>
+      <h4>Commercial Aircraft</h4>
+      <p>Boeing &amp; Airbus fleets</p>
+    </a>
+    <a href="case.html" class="quick-card">
+      <i class="fa-solid fa-building-columns"></i>
+      <h4>Top Airlines</h4>
+      <p>Ranked by fleet &amp; reach</p>
+    </a>
+    <a href="case.html#airports" class="quick-card">
+      <i class="fa-solid fa-tower-observation"></i>
+      <h4>World Airports</h4>
+      <p>Famous global hubs</p>
+    </a>
+    <a href="cases.html#gallery" class="quick-card">
+      <i class="fa-solid fa-images"></i>
+      <h4>Aircraft Gallery</h4>
+      <p>Stunning aviation shots</p>
+    </a>
+  </div>
+</div>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="zoom-in">
+        <i class="fa-solid fa-plane-departure"></i>
+        <div class="stat-number" data-count="128000" data-suffix="+">0</div>
+        <div class="stat-label">Daily Commercial Flights</div>
+      </div>
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fa-solid fa-building-columns"></i>
+        <div class="stat-number" data-count="900" data-suffix="+">0</div>
+        <div class="stat-label">Active Airlines Worldwide</div>
+      </div>
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fa-solid fa-tower-observation"></i>
+        <div class="stat-number" data-count="4100" data-suffix="+">0</div>
+        <div class="stat-label">International Airports</div>
+      </div>
+      <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fa-solid fa-users"></i>
+        <div class="stat-number" data-count="4700" data-suffix="M">0</div>
+        <div class="stat-label">Passengers Carried Yearly</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED AIRCRAFT ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Featured Fleet</span>
+      <h2>Iconic Commercial Aircraft</h2>
+      <p>A glimpse at some of the most influential aircraft flying today, from narrow-body workhorses to double-deck giants.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card" data-aos="fade-up">
+        <div class="card-img">
+          <img src="787.jpg" alt="Boeing 787 Dreamliner">
+          <span class="card-tag">Boeing</span>
+        </div>
+        <div class="card-body">
+          <h3>Boeing 787 Dreamliner</h3>
+          <p>A long-range, super-efficient widebody jet built with composite materials for superior fuel economy.</p>
+          <div class="card-meta">
+            <span><i class="fa-solid fa-users"></i>242–330</span>
+            <span><i class="fa-solid fa-gauge"></i>Mach 0.85</span>
+            <span><i class="fa-solid fa-route"></i>7,355 nmi</span>
+          </div>
+          <a href="cases.html#boeing" class="card-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-img">
+          <img src="a380.jpg" alt="Airbus A380">
+          <span class="card-tag">Airbus</span>
+        </div>
+        <div class="card-body">
+          <h3>Airbus A380</h3>
+          <p>The world's largest passenger airliner — a full double-deck giant built for high-capacity long-haul routes.</p>
+          <div class="card-meta">
+            <span><i class="fa-solid fa-users"></i>525–853</span>
+            <span><i class="fa-solid fa-gauge"></i>Mach 0.85</span>
+            <span><i class="fa-solid fa-route"></i>8,000 nmi</span>
+          </div>
+          <a href="cases.html#airbus" class="card-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-img">
+          <img src="737 on runway.jpg" alt="Boeing 737">
+          <span class="card-tag">Boeing</span>
+        </div>
+        <div class="card-body">
+          <h3>Boeing 737 Family</h3>
+          <p>The best-selling commercial jetliner in history, powering short and medium-haul routes worldwide.</p>
+          <div class="card-meta">
+            <span><i class="fa-solid fa-users"></i>138–204</span>
+            <span><i class="fa-solid fa-gauge"></i>Mach 0.79</span>
+            <span><i class="fa-solid fa-route"></i>3,550 nmi</span>
+          </div>
+          <a href="cases.html#boeing" class="card-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMAGE SLIDER ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">In The Spotlight</span>
+      <h2>Aviation Moments</h2>
+      <p>Take a visual journey across the world's most breathtaking aircraft and airports.</p>
+    </div>
+
+    <div class="slider" data-aos="fade-up">
+      <div class="slides">
+        <div class="slide active">
+          <img src="787 on flight.jpg" alt="Airbus A350 in flight">
+          <div class="slide-caption">
+            <h3>Airbus A350 XWB</h3>
+            <p>Extra-wide body efficiency built for the next generation of long-haul travel.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="singapore airport.webp" alt="Singapore Changi Airport">
+          <div class="slide-caption">
+            <h3>Singapore Changi Airport</h3>
+            <p>Consistently ranked among the world's best airports for design and service.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="a380.jpg" alt="Emirates Airbus A380">
+          <div class="slide-caption">
+            <h3>Emirates Fleet</h3>
+            <p>One of the largest A380 operators, connecting Dubai to the world.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="777.jpg" alt="Boeing 777">
+          <div class="slide-caption">
+            <h3>Boeing 777</h3>
+            <p>The world's largest twinjet, trusted on ultra long-haul routes for decades.</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-controls">
+        <button id="sliderPrev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="sliderNext" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVIATION HIGHLIGHTS ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Why Aviation Matters</span>
+      <h2>Aviation Highlights</h2>
+      <p>Commercial aviation is one of the most transformative industries in human history.</p>
+    </div>
+
+    <div class="highlights-grid">
+      <div class="highlight-card" data-aos="fade-up">
+        <i class="fa-solid fa-globe"></i>
+        <h4>Global Connectivity</h4>
+        <p>Air travel links over 4,000 airports across nearly every country, shrinking the world into a single connected community.</p>
+      </div>
+      <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-leaf"></i>
+        <h4>Fuel Efficiency Gains</h4>
+        <p>Modern aircraft like the 787 and A350 use up to 25% less fuel per seat than the generation they replace.</p>
+      </div>
+      <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>Safety Standards</h4>
+        <p>Commercial aviation remains statistically one of the safest modes of transport thanks to rigorous global regulation.</p>
+      </div>
+      <div class="highlight-card" data-aos="fade-up">
+        <i class="fa-solid fa-chart-line"></i>
+        <h4>Economic Engine</h4>
+        <p>Aviation supports tens of millions of jobs and trillions in global economic activity every year.</p>
+      </div>
+      <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-microchip"></i>
+        <h4>Advanced Technology</h4>
+        <p>Fly-by-wire systems, composite airframes and AI-assisted avionics continue to redefine what aircraft can do.</p>
+      </div>
+      <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-people-group"></i>
+        <h4>Cultural Exchange</h4>
+        <p>Commercial flights make tourism, business, and cross-cultural exchange possible on an unprecedented scale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LATEST NEWS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Stay Updated</span>
+      <h2>Latest Aviation News</h2>
+      <p>The newest developments shaping the commercial aviation industry.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card" data-aos="fade-up">
+        <div class="card-img">
+          <img src="boeing 787 ddelivery news.jpg" alt="Dreamliner delivery news">
+          <span class="news-date">JUN<br>28</span>
+        </div>
+        <div class="card-body">
+          <h3>Boeing Ramps Up 787 Delivery Rate Amid Rising Demand</h3>
+          <p>Airlines worldwide continue placing orders for the fuel-efficient widebody as long-haul travel rebounds.</p>
+          <a href="cases.html#boeing" class="card-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-img">
+          <img src="a350 news.jpg" alt="Airbus A350 freighter news">
+          <span class="news-date">JUN<br>21</span>
+        </div>
+        <div class="card-body">
+          <h3>Airbus Expands A350 Family With New Freighter Variant</h3>
+          <p>The A350F targets the growing air-cargo market with class-leading range and efficiency.</p>
+          <a href="cases.html#airbus" class="card-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-img">
+          <img src="multi dollar.jpg" alt="Airport expansion news">
+          <span class="news-date">JUN<br>14</span>
+        </div>
+        <div class="card-body">
+          <h3>Major Hub Airports Announce Multi-Billion Dollar Expansions</h3>
+          <p>Leading international airports are investing heavily to accommodate record post-pandemic passenger growth.</p>
+          <a href="case.html#airports" class="card-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><i class="fa-solid fa-plane-up"></i>Aviation<span>Hub</span></a>
+        <p>Your premium destination for commercial aviation knowledge — aircraft, airlines, airports and industry insight, all in one place.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cases.html">Aircraft</a></li>
+          <li><a href="case.html">Airlines</a></li>
+          <li><a href="case.html#airports">Airports</a></li>
+          <li><a href="cases.html#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="cases.html#compare">Compare Aircraft</a></li>
+          <li><a href="case.html#top-airlines">Top Airlines</a></li>
+          <li><a href="case.html#videos">Videos</a></li>
+          <li><a href="case.html#feedback">Feedback</a></li>
+          <li><a href="case.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Stay In The Loop</h5>
+        <p style="font-size:0.88rem;margin-bottom:16px;">Subscribe for the latest commercial aviation news and updates.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <a href="index.html">Aviation Hub</a>. All rights reserved. Built for aviation enthusiasts worldwide.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
